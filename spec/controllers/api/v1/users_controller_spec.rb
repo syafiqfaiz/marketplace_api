@@ -5,7 +5,7 @@ describe Api::V1::UsersController do
 
   describe "GET #show" do
     before(:each) do
-      @user = FactoryGirl.create :user
+      @user = create :user
       get :show, id: @user.id, format: :json
     end
 
@@ -20,7 +20,7 @@ describe Api::V1::UsersController do
   describe "POST #create" do
     context "when is successfully created" do
       before(:each) do
-        @user_attributes = FactoryGirl.attributes_for :user
+        @user_attributes = attributes_for :user
         post :create, { user: @user_attributes }, format: :json
       end
 
@@ -51,5 +51,15 @@ describe Api::V1::UsersController do
 
       it { should respond_with 422 }
     end
+  end
+
+  describe "DELETE #destroy" do
+    before(:each) do
+      @user = create :user
+      delete :destroy, { id: @user.id }, format: :json
+    end
+
+    it { should respond_with 204 }
+
   end
 end
