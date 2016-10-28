@@ -16,6 +16,11 @@ group :development do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'sabisu_rails', github: "IcaliaLabs/sabisu-rails"
+  gem 'compass-rails'
+  gem 'furatto'
+  gem 'font-awesome-rails'
+  gem 'simple_form'
 end
 
 group :test do
