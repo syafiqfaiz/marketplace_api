@@ -23,7 +23,7 @@ SabisuRails.setup do |config|
 
   # Resources on the api
   config.resources = [:users]
-  config.default_resource = :users
+  # config.default_resource = :users
 
   # Application name
   # mattr_accessor :app_name

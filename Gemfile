@@ -11,16 +11,16 @@ gem 'jbuilder', '~> 2.0'
 gem 'active_model_serializers'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem "devise"
+gem 'sabisu_rails', github: "IcaliaLabs/sabisu-rails"
+gem 'compass-rails', '~> 2.0.2'
+gem 'furatto'
+gem 'font-awesome-rails'
+gem 'simple_form'
 
 group :development do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
-  gem 'sabisu_rails', github: "IcaliaLabs/sabisu-rails"
-  gem 'compass-rails'
-  gem 'furatto'
-  gem 'font-awesome-rails'
-  gem 'simple_form'
 end
 
 group :test do
