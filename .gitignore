@@ -11,3 +11,5 @@
 /log/*
 !/log/.keep
 /tmp
+libreadline.7.0.dylib
+.byebug_history
